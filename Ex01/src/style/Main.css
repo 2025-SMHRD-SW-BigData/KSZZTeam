@@ -1,0 +1,199 @@
+.fixed-box {
+    position: absolute;
+    top: 13vh;
+    /* 원하는 고정 위치 */
+    left: 37vw;
+    /* 원하는 고정 위치 */
+    
+    padding: 5px;  
+}
+.fixed-box1 {
+    position: absolute;
+    height: 1350px;
+    width:576px;
+    /* 원하는 고정 위치 */
+    left: 34vw;
+    /* 원하는 고정 위치 */
+    
+    padding: 5px;  
+}
+.parent {
+    position: relative; /* 부모 기준 설정 */
+    
+}
+
+#div1 {
+    margin: auto;
+    width: 600px;
+
+}
+
+#div2 {
+    margin: auto;
+
+}
+
+#main {
+    cursor: pointer;
+    font-size: 50px;
+}
+
+#logo {
+    margin-left: 280px;
+    margin-top: 20px;
+
+}
+
+#main_main {
+    cursor: pointer;
+    margin-left: 20px;
+    font-size: 30px;
+    
+}
+
+#main_sizang {
+    cursor: pointer;
+    margin-left: 30px;
+    font-size: 30px;
+    
+}
+
+#main_infor {
+    cursor: pointer;
+    margin-left: 30px;
+    font-size: 30px;
+}
+
+#main_sns {
+    cursor: pointer;
+    margin-left: 30px;
+    font-size: 30px;
+}
+
+#main_ask {
+    cursor: pointer;
+    margin-left: 30px;
+    font-size: 30px;
+}
+
+#main_search {
+    cursor: pointer;
+    margin-top: 2000px;
+    margin-left: 600px;
+    font-size: 30px;
+}
+
+#search {
+    cursor: pointer;
+    position: relative;
+    float: left;
+    
+    left: 50px;
+    font-size: 30px;
+    border-color: black;
+    width: 100px;
+    height: 50px;
+    background-color: gray;
+    color: white;
+    text-align: center;
+
+}
+
+#chat {
+    cursor: pointer;
+    position: relative;
+    float: left;
+
+    left: 150px;
+    font-size: 30px;
+    border-color: black;
+    background-color: gray;
+    color: white;
+    width: 100px;
+    height: 50px;
+    text-align: center;
+}
+#span{
+    width: 150px;
+    height: 150px;
+    margin-left:150px;
+    background-color: blue;
+}
+
+
+#my {
+    cursor: pointer;
+    position: relative;
+    float: left;
+
+    left: 260px;
+    font-size: 30px;
+    border-color: black;
+    background-color: gray;
+    color: white;
+    width: 100px;
+    height: 50px;
+    text-align: center;
+}
+
+#header {
+    position: fixed;
+    background-color: rgb(30,131,255);
+    top: 0px;
+}
+
+#footer {
+    position: fixed;
+    background-color: rgb(30,131,255);
+    top: 1300px;
+    width: 570px;
+    height: 200px;
+
+}
+#login{
+    margin-left : 225px;
+    font-size: 50px;
+}
+#login_div{
+    background-color: rgb(30,131,255);
+}
+#img1{
+    margin-top : 100px;
+    }
+#login_div1{
+    margin-left: 20px;
+}
+#login_div2{
+    background-color: white;
+    margin-left: 75px;
+    margin-right: 75px;
+}
+.input{
+    size:150px;
+}
+.passsearch{
+    cursor: pointer;
+    text-decoration : underline;
+    margin-left: 110px;
+}
+#button{
+    cursor: pointer;
+    width: 400px;
+    height: 60px;
+    font-size: 30px;
+    margin-left : 90px;
+}
+#passsearch1{
+    cursor: pointer;
+    text-decoration : underline;
+    margin-left: 230px;
+}
+#img2{
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+}
+#span1{
+    font-size: 40px;
+    margin-left: 130px;
+}
