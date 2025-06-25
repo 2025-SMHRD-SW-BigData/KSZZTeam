@@ -11,7 +11,7 @@ import Chat from './code/Chat'
 import Member from './code/Member'
 import PassChange from './code/PassChange'
 import PassChanges from './code/PassChanges'
-const App2 = () => {
+const App = () => {
     return (
         <div>
             <Routes>
@@ -32,4 +32,4 @@ const App2 = () => {
     )
 }
 
-export default App2
+export default App

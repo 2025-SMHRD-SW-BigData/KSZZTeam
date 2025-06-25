@@ -17,7 +17,7 @@ const Footer = () => {
                 <img id="chat" src={img1} onClick={() => { nav('/chat') }}></img>
 
                 <span id="my" onClick={() => { nav('/my') }}>
-                    My
+                    고객센터
                 </span>
             </footer>
         </div>

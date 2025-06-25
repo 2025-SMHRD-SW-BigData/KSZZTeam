@@ -3,59 +3,51 @@
     top: 13vh;
     /* 원하는 고정 위치 */
     left: 37vw;
-    /* 원하는 고정 위치 */
-    
+    /* 원하는 고정 위치 */  
     padding: 5px;  
 }
 .fixed-box1 {
     position: absolute;
-    height: 1350px;
+    height: 1062px;
     width:576px;
     /* 원하는 고정 위치 */
     left: 34vw;
-    /* 원하는 고정 위치 */
-    
+    /* 원하는 고정 위치 */    
     padding: 5px;  
+    background-color:rgb(30,131,255) ;
 }
 .parent {
-    position: relative; /* 부모 기준 설정 */
-    
+    position: relative; /* 부모 기준 설정 */   
 }
 
 #div1 {
     margin: auto;
     width: 600px;
-
 }
 
 #div2 {
     margin: auto;
-
 }
 
 #main {
     cursor: pointer;
-    font-size: 50px;
 }
 
 #logo {
     margin-left: 280px;
     margin-top: 20px;
-
 }
 
 #main_main {
     cursor: pointer;
     margin-left: 20px;
-    font-size: 30px;
-    
+    font-size: 30px; 
 }
 
 #main_sizang {
     cursor: pointer;
     margin-left: 30px;
-    font-size: 30px;
-    
+    font-size: 30px;   
 }
 
 #main_infor {
@@ -96,7 +88,6 @@
     background-color: gray;
     color: white;
     text-align: center;
-
 }
 
 #chat {
@@ -125,13 +116,12 @@
     cursor: pointer;
     position: relative;
     float: left;
-
-    left: 260px;
+    left: 220px;
     font-size: 30px;
     border-color: black;
     background-color: gray;
     color: white;
-    width: 100px;
+    width: 140px;
     height: 50px;
     text-align: center;
 }
@@ -145,10 +135,9 @@
 #footer {
     position: fixed;
     background-color: rgb(30,131,255);
-    top: 1300px;
+    top: 1030px;
     width: 570px;
     height: 200px;
-
 }
 #login{
     margin-left : 225px;
@@ -160,10 +149,10 @@
 #img1{
     margin-top : 100px;
     }
-#login_div1{
+.login_div1{
     margin-left: 20px;
 }
-#login_div2{
+.login_div2{
     background-color: white;
     margin-left: 75px;
     margin-right: 75px;
@@ -193,7 +182,127 @@
     width: 50px;
     height: 50px;
 }
-#span1{
+.span1{
     font-size: 40px;
     margin-left: 130px;
+}
+.span2{
+    font-size: 40px;
+    margin-left: 150px;
+}
+.login_h{
+    cursor: pointer;
+    text-decoration: underline;
+    color: rgb(255, 255, 255);
+    margin-left:300px ; 
+}
+.login_h1{
+    cursor: pointer;
+    text-decoration: underline;
+    color: rgb(255, 255, 255);
+    margin-left: 10px;  
+}
+.login_h2{
+    color: white;
+    margin-left: 10px;
+}
+#button1{
+    width: 150px;
+    height: 50px;
+    margin-left: 120px;
+    font-size: 20px;
+}
+#button2{
+    width: 150px;
+    height: 50px;
+    margin-left: 20px;
+    font-size: 20px;
+}
+#fixed_box3{
+    position: absolute;
+    margin-top: 130px;
+    left:655px;
+}
+.fixed-box4 {
+    position: absolute;
+    height: 1062px;
+    width:576px;
+    /* 원하는 고정 위치 */
+    left: 34vw;
+    /* 원하는 고정 위치 */    
+    padding: 5px;  
+}
+
+
+.ask-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 120px;
+}
+
+.ask-title {
+    font-size: 36px;
+    margin-bottom: 30px;
+}
+
+.upload-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#imageUpload {
+    margin-bottom: 20px;
+}
+
+#imagePreview {
+    margin-top: 10px;
+    padding: 10px;
+    border: 2px dashed #aaa;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 500px;
+    height: 300px;
+    background-color: #f9f9f9;
+}
+
+#imagePreview img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    border-radius: 10px;
+}
+
+.analyze-button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: rgb(30, 131, 255);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.analyze-button:hover {
+    background-color: rgb(20, 100, 200);
+}
+
+.result-section {
+    margin-top: 40px;
+    text-align: center;
+}
+
+.result-box {
+    margin-top: 10px;
+    padding: 20px;
+    width: 500px;
+    min-height: 100px;
+    border: 2px solid #aaa;
+    border-radius: 10px;
+    background-color: #fff;
+    font-size: 20px;
 }
