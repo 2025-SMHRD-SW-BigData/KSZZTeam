@@ -25,44 +25,44 @@ const PassChange = () => {
       nav('/passchanges');
     }
   };
+
   return (
     <div className='parent'>
-      <div className='fixed-box1' id='login_div'>
+      <div className='fixed-box1'>
         <img src={img1} id='img2' onClick={() => { nav('/search') }}></img>
-            <b id='span1'>비밀번호 찾기</b>
+            <b className='span1'>비밀번호 찾기</b>
 
+          
           <br></br>
           <br></br>
           <br></br>
           <br></br>
           <br></br>
-          <br></br>
-          <br></br>
-          <br></br>
-        <div id='login_div2' >
+          
+        <div className='login_div2' >
           
           <h2 style={{ textAlign: 'center', fontSize: '30px' }}>개인정보를 입력해 주세요</h2>
           <br></br>
           <br></br>
-          <div id='login_div1'>
-            <span style={{ fontSize: '20px' }} value={userName} onChange={(e)=>setUserName(e.target.value)}>* 이름   </span>
+          <div className='login_div1'>
+            <span style={{ fontSize: '20px' }} >* 이름   </span>
 
             <br></br>
-            <input type='text' placeholder='이름을 입력 하세요' style={{ width: '350px', height: '30px' }}></input>
+            <input type='text' placeholder='이름을 입력 하세요' style={{ width: '350px', height: '30px' }} value={userName} onChange={(e)=>setUserName(e.target.value)}></input>
             <br></br>
             <br></br>
             <br></br>
 
-            <span style={{ fontSize: '20px' }} value={userId} onChange={(e)=>setUserId(e.target.value)}>* 아이디  </span>
+            <span style={{ fontSize: '20px' }} >* 이메일  </span>
             <br></br>
-            <input type='text' placeholder='아이디를 입력 하세요' style={{ width: '350px', height: '30px' }}  ></input>
+            <input type='text' placeholder='아이디를 입력 하세요' style={{ width: '350px', height: '30px' }} value={userId} onChange={(e)=>setUserId(e.target.value)}  ></input>
             <br></br>
             <br></br>
             <br></br>
             
-            <span style={{ fontSize: '20px' }} value={userEmail} onChange={(e)=>setUserEmail(e.target.value)}>* 이메일  </span>
+            <span style={{ fontSize: '20px' }} >* 생년월일  </span>
             <br></br>
-            <input type='text' placeholder='이메일을 확인 하세요' style={{ width: '350px', height: '30px' }}  ></input>
+            <input type='text' placeholder='이메일을 확인 하세요' style={{ width: '350px', height: '30px' }} value={userEmail} onChange={(e)=>setUserEmail(e.target.value)} ></input>
             <br></br>
             <br></br>
             <br></br>
@@ -83,10 +83,8 @@ const PassChange = () => {
         <br></br>
         <br></br>
         <br></br>
-        <br></br>
-        <br></br>
-        <br></br>
-        <br></br>
+        
+        
 
         <button id='button' onClick={handleLogin}>비밀번호 변경하기</button>
 

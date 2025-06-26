@@ -10,14 +10,14 @@ const Footer = () => {
 
         <div id="div1">
             <footer id="footer">
-                <span id="search" onClick={() => { nav('/search') }}>
-                    로그인
+                <span id="search" onClick={() => { nav('/cooker') }}>
+                    요리사
                 </span>
                 
                 <img id="chat" src={img1} onClick={() => { nav('/chat') }}></img>
 
                 <span id="my" onClick={() => { nav('/my') }}>
-                    My
+                    고객센터
                 </span>
             </footer>
         </div>
