@@ -11,8 +11,16 @@ import Upload from './Upload'
 
 const Member = () => {
   const nav = useNavigate();
+  const [selectedImage, setSelectedImage] = useState(null);
   const [visible, setVisible] = useState(false)
   const [selectedOption, setSelectedOption] = useState(null);
+
+    const handleImageChange = (e) => {
+    if (e.target.files && e.target.files[0]) {
+      setSelectedImage(URL.createObjectURL(e.target.files[0]));
+       // 분석 결과 초기화
+    }
+  }
 
   const handleOptionChange = (event) => {
     const value = event.target.value;
@@ -28,8 +36,6 @@ const Member = () => {
         <form>
           <img src={img1} id='img2' onClick={() => { nav('/search') }}></img>
           <b className='span2'>회원가입</b>
-
-
           <br></br>
           <br></br>
           <div className='login_div2'>
@@ -91,8 +97,17 @@ const Member = () => {
               <br></br>
               <br></br>
               <p style={{ color: 'red', fontSize: '15px' }}>*요리사일 경우 경력증명을 할 수 있는 사진을 올려주세요</p>
-              <input type="file" id="imageUpload" accept="image/*" />
-              <div id="imagePreview"></div>
+              <input
+                type="file"
+                id="imageUpload"
+                accept="image/*"
+                onChange={handleImageChange}
+              />
+              {selectedImage && (
+                <div id="imagePreview1">
+                  <img src={selectedImage} alt="업로드된 이미지" />
+                </div>
+              )}
 
             </div>
 
@@ -101,7 +116,7 @@ const Member = () => {
           <br></br>
           <br></br>
           <br></br>
-          <button id='button1' type='submit' onClick={()=>{nav('/search')}}>회원가입 완료</button><button id='button2' type='reset'>초기화</button>
+          <button id='button1' type='submit' onClick={() => { nav('/search') }}>회원가입 완료</button><button id='button2' type='reset'>초기화</button>
         </form>
       </div>
     </div >
